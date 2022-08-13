@@ -51,6 +51,10 @@ a {
 }
 
 main {
+  background-image: url('https://images.pexels.com/photos/1252890/pexels-photo-1252890.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   display: flex;
   height: 90%;
   background-color: rgb(8, 29, 49);
