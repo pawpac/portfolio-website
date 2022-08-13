@@ -1,0 +1,282 @@
+.spacecraft {
+  transform: translate(-200px);
+}
+
+.solar-panels {
+  position: relative;
+}
+
+.solar-panel {
+  display: flex;
+}
+
+.panel-one {
+  position: absolute;
+  transform: rotate(0deg) translate(180px);
+
+}
+
+.panel-two {
+  position: absolute;
+  transform: rotate(120deg) translate(180px);
+}
+
+.panel-three {
+  position: absolute;
+  transform: rotate(240deg) translate(180px);
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 50px;
+  background-image: linear-gradient(90deg, rgb(87, 87, 87), rgb(121, 121, 121), rgb(87, 87, 87));
+  border-style: solid;
+  border-width: 1px;
+  border-color:rgb(31, 31, 31);
+}
+
+.base {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(51, 51, 51);
+  border-radius: 100px;
+  transform: translate(10px, -75px);
+}
+
+.walls {
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  background-color: rgb(182, 182, 182);
+  border-radius: 100px;
+  transform: translate(15px, -70px);
+  overflow: hidden;
+}
+
+.seams {
+  position: absolute;
+  display: grid;
+  grid-template-areas: "seam1 seam2"
+  "seam3 seam4";
+}
+
+.wall-seam {
+
+  transform: translate(-1px, -1px);
+  width: 95px;
+  height: 95px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(49, 49, 49);
+}
+
+.seam-one {
+  grid-area: seam1;
+}
+
+.seam-two {
+  grid-area: seam2;
+}
+
+.seam-three {
+  grid-area: seam3;
+}
+
+.seam-four {
+  grid-area: seam4;
+}
+
+.bolts {
+  position: absolute;
+  display: grid;
+  grid-template-areas: "bolt1 bolt2"
+  "bolt3 bolt4";
+  gap: 5px;
+}
+
+.wall-bolt {
+  transform: translate(-3.5px, -3.8px);
+  width: 95px;
+  height: 95px;
+  border-style: dashed;
+  border-width: 1px;
+  border-color: rgb(97, 97, 97);
+}
+
+.bolt-one {
+  grid-area: bolt1;
+}
+
+.bolt-two {
+  grid-area: bolt2;
+}
+
+.bolt-three {
+  grid-area: bolt3;
+}
+
+.bolt-four {
+  grid-area: bolt4;
+}
+
+
+/* TESTING */
+
+
+.hatch-base {
+  position: absolute;
+  background-color: rgb(136, 135, 135);
+  border: solid 3px rgb(90, 89, 89);
+  border-radius: 100px;
+  height: 100px;
+  width: 100px;
+  transform: translate(57px, -27px);
+}
+
+.hatch-ring {
+  position: absolute;
+  background-color: rgb(156, 154, 154);
+  border: dotted 3px rgb(51, 51, 51);
+  border-radius: 100px;
+  height: 90px;
+  width: 90px;
+  transform: translate(2px, 2px);
+}
+
+.door {
+  position: absolute;
+  background-image: radial-gradient(rgb(201, 169, 169), rgb(27, 24, 24));
+  border: solid 3px rgb(87, 86, 86);
+  border-radius: 100px;
+  height: 80px;
+  width: 80px;
+  transform: translate(2px, 2px) rotate(45deg);
+  display: grid;
+  grid-template-areas: "lip1 lip2"
+  "lip3 lip4";
+  gap: 10px;
+  overflow: hidden;
+}
+
+.lip {
+  width: 40px;
+  height: 40px;
+  background-image: linear-gradient(rgb(73, 72, 72), rgb(112, 111, 111));
+  border: solid 1px rgb(218, 194, 194);
+  border-radius: 10px;
+  transform: translate(-5px, -5px);
+  /* box-shadow: 0 0 5px black; */
+}
+
+.lip-one {
+  grid-area: lip1;
+}
+
+.lip-two {
+  grid-area: lip2;
+}
+
+.lip-three {
+  grid-area: lip3;
+}
+
+.lip-four {
+  grid-area: lip4;
+}
+
+.point {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(255, 209, 209);
+  border-radius: 100px;
+  box-shadow: 0 0 10px rgb(255, 0, 0);
+  transform: translate(40px, 42px);
+}
+
+.vents {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  display: grid;
+  gap: 90px;
+  grid-template-areas: "vent1 vent2"
+  "vent3 vent4";
+  transform: translate(-5px, -5px);
+}
+
+.vent {
+  width: 5px;
+  height: 5px;
+  background-image: radial-gradient(rgb(31, 31, 31), rgb(190, 189, 189));
+  border: solid 1px rgb(29, 28, 28);
+  border-radius: 100px;
+}
+
+.vent-one {
+  grid-area: vent1;
+}
+
+.vent-two {
+  grid-area: vent2;
+}
+
+.vent-three {
+  grid-area: vent3;
+}
+
+.vent-four {
+  grid-area: vent4;
+}
+
+.model {
+  transform: translate(90px, -28px);
+}
+
+.rotate-model {
+  animation: rotation 120s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* SHADOW */
+
+.capsule-shadow {
+  transform: translate(10px, -75px);
+}
+
+.shadow-add {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background-image: linear-gradient(-45deg, rgba(0, 0, 0, .9) 30%, rgba(255, 255, 255, 0));
+  /* transform: translate(10px, -75px); */
+  animation: shadow-rotation 120s infinite linear;
+}
+
+@keyframes shadow-rotation {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+
+
+/* TESTING */
