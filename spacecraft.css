@@ -8,6 +8,7 @@
 
 .solar-panel {
   display: flex;
+  overflow: hidden;
 }
 
 .panel-one {
@@ -234,10 +235,12 @@
 }
 
 .model {
-  transform: translate(90px, -28px);
+  transform: translate(340px, 222px);
 }
 
 .rotate-model {
+  width: 500px;
+  height: 500px;
   animation: rotation 120s infinite linear;
 }
 
@@ -252,31 +255,4 @@
 
 
 
-/* SHADOW */
 
-.capsule-shadow {
-  transform: translate(10px, -75px);
-}
-
-.shadow-add {
-  position: absolute;
-  height: 200px;
-  width: 200px;
-  border-radius: 100px;
-  background-image: linear-gradient(-45deg, rgba(0, 0, 0, .9) 30%, rgba(255, 255, 255, 0));
-  /* transform: translate(10px, -75px); */
-  animation: shadow-rotation 120s infinite linear;
-}
-
-@keyframes shadow-rotation {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
-
-
-
-/* TESTING */
