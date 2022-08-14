@@ -1,0 +1,219 @@
+/* SHADOW */
+
+.capsule-shadow {
+  transform: translate(10px, -75px);
+}
+
+.shadow-add {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background-image: linear-gradient(-45deg, rgba(0, 0, 0, .9) 30%, rgba(255, 255, 255, 0));
+  transform: translate(10px, -75px);
+  animation: shadow-rotation 120s infinite linear;
+}
+
+@keyframes shadow-rotation {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.panel-shadow {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50%;
+  height: 200px;
+  border-radius: 25px;
+  /* transform: skew(55deg) translate(-120px);
+  animation: panel-one-shade 120s infinite linear; */
+}
+
+/* @keyframes panel-one-shade {
+  0% {
+    transform: skew(55deg) translate(-120px) ;
+  }
+
+  5% {
+    transform: skew(85deg) translate(-30px) scale(2);
+  }
+} */
+
+.expand-panel-shadow-one {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 612px;
+  height: 200px;
+  /* transform: translate(-150px, -100px); */
+}
+
+.rotate-panel-shadow-one {
+  width: 612px;
+  height: 200px;
+  position: absolute;
+
+  animation: solar-panel-shadow 120s infinite linear;
+  /* transform: rotate(45deg); */
+}
+
+.shadow-container-one {
+
+  width: 612px;
+  height: 190px;
+  position: absolute;
+  transform: translate(-390px, -70px);
+}
+
+@keyframes solar-panel-shadow {
+  from {
+    transform: rotate(45deg);
+  }
+  to {
+    transform: rotate(-315deg);
+  }
+}
+
+
+
+
+/* ###################################################################################3 */
+
+.expand-panel-shadow-two {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 612px;
+  height: 200px;
+  /* transform: translate(-150px, -100px); */
+}
+
+.rotate-panel-shadow-two {
+  width: 612px;
+  height: 200px;
+  position: absolute;
+
+  animation: solar-panel-shadow-two 120s infinite linear;
+  /* transform: rotate(45deg); */
+}
+
+.shadow-container-two {
+
+  width: 612px;
+  height: 190px;
+  position: absolute;
+  transform: translate(-390px, -70px);
+}
+
+@keyframes solar-panel-shadow-two {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(-270deg);
+  }
+}
+
+.fix-rotation {
+  width: 612px;
+  height: 190px;
+  position: absolute;
+  transform: rotate(90deg);
+}
+
+
+/* ###################################################################################3 */
+
+.expand-panel-shadow-three {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 612px;
+  height: 200px;
+  /* transform: translate(-150px, -100px); */
+}
+
+.rotate-panel-shadow-three {
+  width: 612px;
+  height: 200px;
+  position: absolute;
+
+  animation: solar-panel-shadow-three 120s infinite linear;
+  /* transform: rotate(45deg); */
+}
+
+.shadow-container-three {
+
+  width: 612px;
+  height: 190px;
+  position: absolute;
+  transform: translate(-390px, -70px);
+}
+
+@keyframes solar-panel-shadow-three {
+  from {
+    transform: rotate(165deg);
+  }
+  to {
+    transform: rotate(-195deg);
+  }
+}
+
+.fix-rotation {
+  width: 612px;
+  height: 190px;
+  position: absolute;
+  transform: rotate(90deg);
+}
+
+
+
+
+
+
+/* TESTING */
+
+/* light */
+
+span.material-symbols-outlined {
+  color: rgb(195, 195, 195);
+  font-size: 2rem;
+  /* text-shadow: 0 0 5px rgb(255, 255, 255); */
+  z-index: 1;
+  font-size: 2em;
+  animation: blink 3s infinite linear;
+}
+
+a:hover {
+  color: rgb(247, 190, 190);
+  text-shadow: 0 0 10px rgb(255, 33, 33);
+}
+
+@keyframes blink {
+  0% {
+    color:  rgb(148, 147, 147);
+    text-shadow: 0 0 0px rgb(255, 255, 255);
+  }
+  40% {
+    color: white;
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+  }
+
+  60% {
+    color: white;
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+  }
+  100% {
+    color:  rgb(148, 147, 147);
+    text-shadow: 0 0 0px rgb(255, 255, 255);
+  }
+
+
+}
