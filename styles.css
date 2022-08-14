@@ -5,7 +5,9 @@
 
 body {
   height: 100vh;
-  color: rgb(226, 226, 226)
+  color: rgb(226, 226, 226);
+  overflow: hidden;
+  
 }
 
 header {
@@ -27,7 +29,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 33.3333%;
+  height: 100%;
+  width: 100%;
   min-width: 100px;
   border-style: solid;
   border-color: rgb(131, 131, 131);
@@ -44,8 +47,10 @@ li {
   list-style: none;
 }
 
-a {
 
+a {
+  height: 100%;
+  width: 100%;
   text-decoration: none;
   color: rgb(226, 226, 226);
 }
