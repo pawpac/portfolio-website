@@ -7,35 +7,42 @@
     <link rel="stylesheet" href="spacecraft.css">
     <link rel="stylesheet" href="light-and-shadow.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js" defer></script>
   </head>
   <body>
     <header>
       <div class="navbar">
         <ul>
-          <a href="#">
-            <div class="nav-btn">
-              <li>About</li>
-            </div>
-          </a>
-          <a href="#">
-            <div class="nav-btn">
-              <li>Work</li>
-            </div>
-          </a>
-          <a href="#">
-            <div class="nav-btn">
-              <li>Contact</li>
-            </div>
-          </a>
+
+          <div class="nav-btn" id="about">
+            <li>
+              <span id="about-span">
+                <a class="nav-a" id="about-a" href="#">About</a>
+              </span>
+            </li>
+          </div>
+          <div class="nav-btn" id="work">
+            <li>
+              <span id="work-span">
+                <a class="nav-a" id="work-a" href="#">Work</a>
+              </span>
+            </li>
+          </div>
+          <div class="nav-btn" id="contact">
+            <li>
+              <span id="contact-span">
+                <a class="nav-a" id="contact-a" href="#">Contact</a>
+              </span>
+            </li>
+          </div>
         </ul>
       </div>
     </header>
-    <main class="main">
+    <main class="main" id="main">
 
       <div class="space-container">
         <div class="stars" id="star-field"></div>
-        <!-- TESTING BELOW -->
         <div class="intro">
           <h1>Hi, my name is Pawel Paczkowski<br> and I am a full stack developer!</h1>
         </div>
@@ -60,8 +67,8 @@
                   </div>
 
                   <div class="cell"></div>
-                  <div class="cell">
-                    <span class="material-symbols-outlined"><a href="#">account_circle</a></span></div>
+                  <div class="cell mid-cell">
+                    <span class="material-symbols-outlined"><a class="satelite-btn" href="#">account_circle</a></span></div>
                   <div class="cell"></div>
                 </div>
                 <div class="solar-panel panel-two">
@@ -75,8 +82,8 @@
                   </div>
 
                   <div class="cell"></div>
-                  <div class="cell">
-                    <span class="material-symbols-outlined"><a href="#">code</a></span></div>
+                  <div class="cell mid-cell">
+                    <span class="material-symbols-outlined"><a class="satelite-btn" href="#">code</a></span></div>
                   <div class="cell"></div>
                 </div>
                 <div class="solar-panel panel-three">
@@ -90,8 +97,8 @@
                   </div>
 
                   <div class="cell"></div>
-                  <div class="cell">
-                    <span class="material-symbols-outlined"><a href="#">alternate_email</a></span></div>
+                  <div class="cell mid-cell">
+                    <span class="material-symbols-outlined"><a class="satelite-btn" href="#">alternate_email</a></span></div>
                   <div class="cell"></div>
                 </div>
 
@@ -126,10 +133,13 @@
                   <div class="hatch-base">
                     <div class="hatch-ring">
                       <div class="door">
-                        <div class="lip lip-one"></div>
+                        <div class="reflection-container">
+                        <div class="reflection"></div>
+                        </div>
+                        <!-- <div class="lip lip-one"></div>
                         <div class="lip lip-two"></div>
                         <div class="lip lip-three"></div>
-                        <div class="lip lip-four"></div>
+                        <div class="lip lip-four"></div> -->
                       </div>
                       <div class="vents">
                         <div class="vent vent-one"></div>
@@ -158,17 +168,17 @@
 
 
     </main>
-    <footer>
+    <footer id="foot">
       <div class="social-media">
         <ul class="foot-ul">
           <div class="foot-btn">
-            <li><a href="#">LinkedIn</a></li>
+            <li><a href="http://www.linkedin.com/in/pawpac" class="fa fa-linkedin" target="_blank"></a></li>
           </div>
           <div class="foot-btn">
-            <li><a href="#">GitHub</a></li>
+            <li><a href="https://www.github.com/pawpac"class="fa fa-github" target="_blank"></a></li>
           </div>
           <div class="foot-btn">
-            <li><a href="#">YouTube</a></li>
+            <li><a href="https://www.youtube.com/c/PawPac" class="fa fa-youtube" target="_blank"></a></li>
           </div>
         </ul>
       </div>
