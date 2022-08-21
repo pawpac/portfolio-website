@@ -13,18 +13,31 @@ body {
 header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 5%;
   min-height: 35px;
   background-color: rgb(22, 22, 22);
   z-index: 1;
 }
 
+.logo {
+  padding-left: 20px;
+  width: 33.3333vw;
+}
+
 .navbar {
-  width: 30vw;
+  width: 33.3333vw;
   height: 100%;
   min-height: 35px;
 }
+
+.settings {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  width: 33.3333vw;
+}
+
 
 .nav-btn {
   display: flex;
@@ -58,26 +71,26 @@ a {
 }
 
 main {
+  position: relative;
   background-image: url('https://images.pexels.com/photos/1252890/pexels-photo-1252890.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   display: flex;
+  align-items: center;
   height: 90%;
   background-color: rgb(8, 29, 49);
 }
 
 .space-container {
   width: 100%;
+  height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10%;
 }
 
-.intro {
-  padding-right: 200px;
-}
 /* .main-right {
   display: flex;
   justify-content: center;
@@ -183,9 +196,14 @@ footer {
   }
 }
 
-.intro {
+h1 {
   text-shadow: 5px 5px 2px black;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.display {
+  width: 50%;
+  /* padding-right: 200px; */
 }
 
 a.fa {
@@ -195,4 +213,42 @@ a.fa {
 
 a.satelite-btn {
   padding: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+.setting-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 1;
+}
+
+.setting-menu {
+  background-color: black;
+  padding: 35px;
+}
+
+.sound {
+  display: flex;
+
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.grades {
+  display: flex;
+  gap: 10px;
+}
+
+.settings:hover {
+  color: red;
 }
