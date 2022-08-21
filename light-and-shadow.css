@@ -182,7 +182,7 @@
 
 /* light */
 
-span.material-symbols-outlined {
+span.blink {
   color: rgb(195, 195, 195);
   font-size: 2rem;
   /* text-shadow: 0 0 5px rgb(255, 255, 255); */
@@ -192,8 +192,9 @@ span.material-symbols-outlined {
 }
 
 a:hover {
-  color: rgb(247, 190, 190);
+  /* color: rgb(247, 190, 190); */
   text-shadow: 0 0 10px rgb(255, 33, 33);
+  color: red;
 }
 
 @keyframes blink {
