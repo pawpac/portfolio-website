@@ -265,6 +265,7 @@
 }
 
 .rotate-model {
+  
   width: 50px;
   height: 50px;
   animation: rotation 120s infinite linear;
@@ -278,7 +279,11 @@
     transform: rotate(360deg);
   }
 }
-/*  */
+
+.satelite {
+  width: 20%;
+  /* padding-left: 300px; */
+}
 
 
 
