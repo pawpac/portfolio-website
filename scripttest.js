@@ -12,17 +12,17 @@ const satContact = document.getElementById('sat-contact');
 const settingBtn = document.getElementById('setting');
 const settingMenu = document.getElementById('setting-menu');
 
-const landingPageFlash = document.getElementById('landing-page');
-const flashOnLandingPage = document.getElementById('fire-flash-landing');
+// const landingPageFlash = document.getElementById('landing-page');
+// const flashOnLandingPage = document.getElementById('fire-flash-landing');
 
-const rpsPageFlash = document.getElementById('rps-page');
-const flashOnRpsPage = document.getElementById('fire-flash-rps');
+// const rpsPageFlash = document.getElementById('rps-page');
+// const flashOnRpsPage = document.getElementById('fire-flash-rps');
 
-const libraryPageFlash = document.getElementById('library-page');
-const flashOnLibraryPage = document.getElementById('fire-flash-library');
+// const libraryPageFlash = document.getElementById('library-page');
+// const flashOnLibraryPage = document.getElementById('fire-flash-library');
 
-const recipesPageFlash = document.getElementById('recipes-page');
-const flashOnRecipesPage = document.getElementById('fire-flash-recipes');
+// const recipesPageFlash = document.getElementById('recipes-page');
+// const flashOnRecipesPage = document.getElementById('fire-flash-recipes');
 
 const introPage = document.querySelector('.intro-page');
 const aboutPage = document.querySelector('.about-page');
@@ -46,10 +46,10 @@ starRows.forEach((row) => {
   }
 })
 
-flashSwipe(landingPageFlash, flashOnLandingPage);
-flashSwipe(rpsPageFlash, flashOnRpsPage);
-flashSwipe(libraryPageFlash, flashOnLibraryPage);
-flashSwipe(recipesPageFlash, flashOnRecipesPage);
+// flashSwipe(landingPageFlash, flashOnLandingPage);
+// flashSwipe(rpsPageFlash, flashOnRpsPage);
+// flashSwipe(libraryPageFlash, flashOnLibraryPage);
+// flashSwipe(recipesPageFlash, flashOnRecipesPage);
 
 // landingPageFlash.addEventListener('mouseover', () => {
 //   flashOnLandingPage.classList.add('flash');
@@ -133,6 +133,7 @@ function generateRandomNum() {
   return num;
 }
 
+
 // function hideAllExcept(omit) {
 //   introPage.classList.add('hide');
 //   aboutPage.classList.add('hide');
@@ -142,16 +143,16 @@ function generateRandomNum() {
 //   omit.classList.remove('hide');
 // }
 
-function flashSwipe(pageFlash, flashOnPage) {
-  pageFlash.addEventListener('mouseover', () => {
-    flashOnPage.classList.add('flash');
-  })
+// function flashSwipe(pageFlash, flashOnPage) {
+//   pageFlash.addEventListener('mouseover', () => {
+//     flashOnPage.classList.add('flash');
+//   })
   
-  pageFlash.addEventListener('mouseout', () => {
-    setTimeout(removeFlash(flashOnPage), 500);
-  })
-}
+//   pageFlash.addEventListener('mouseout', () => {
+//     setTimeout(removeFlash(flashOnPage), 500);
+//   })
+// }
 
-function removeFlash(flashOnPage) {
-  flashOnPage.classList.remove('flash');
-}
+// function removeFlash(flashOnPage) {
+//   flashOnPage.classList.remove('flash');
+// }
