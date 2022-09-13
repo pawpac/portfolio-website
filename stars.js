@@ -1,6 +1,6 @@
 const constelation = document.getElementById('constelations');
 
-for (let i = 0; i < 50; i += 1) {
+for (let i = 0; i < 30; i += 1) {
   let starsRow = document.createElement('div');
   starsRow.classList.add('stars-row');
   constelation.appendChild(starsRow);
@@ -9,7 +9,7 @@ for (let i = 0; i < 50; i += 1) {
 const starsRows = document.querySelectorAll('.stars-row');
 
 starsRows.forEach((cell) => {
-  for (let i = 0; i < parseFloat(randomNum() * 100); i += 1) {
+  for (let i = 0; i < 30; i += 1) {
     let speck = document.createElement('div');
     speck.textContent = '.';
     speck.classList.add('speck');

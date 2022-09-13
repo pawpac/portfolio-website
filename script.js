@@ -61,10 +61,12 @@ flashSwipe(recipesPageFlash, flashOnRecipesPage);
 
 
 
+
 elementForListener.addEventListener('mouseover', (e) => {
  if (e.target.classList.contains('star')) {
     e.target.classList.add('bright');
   }
+
 })
 
 flipNavbarBtn(aboutA, aboutSpan, 'account_circle', 'About');

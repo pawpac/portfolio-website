@@ -156,3 +156,37 @@ function generateRandomNum() {
 // function removeFlash(flashOnPage) {
 //   flashOnPage.classList.remove('flash');
 // }
+
+document.addEventListener('wheel', () => {
+  addColor(satAbout);
+  setTimeout(workColor, 100);
+  setTimeout(contactColor, 200);
+
+  setTimeout(removeAboutColor, 100);
+  setTimeout(removeWorkColor, 200);
+  setTimeout(removeContactColor, 300);
+})
+
+function addColor(btn) {
+  btn.classList.add('scroll');
+}
+
+function workColor() {
+  satWork.classList.add('scroll')
+}
+
+function contactColor() {
+  satContact.classList.add('scroll')
+}
+
+function removeAboutColor() {
+  satAbout.classList.remove('scroll')
+}
+
+function removeWorkColor() {
+  satWork.classList.remove('scroll')
+}
+
+function removeContactColor() {
+  satContact.classList.remove('scroll')
+}
