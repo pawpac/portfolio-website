@@ -167,8 +167,38 @@ document.addEventListener('wheel', () => {
   setTimeout(removeContactColor, 300);
 })
 
+// aboutA.addEventListener('mouseover', () => {
+//   addColor(satAbout);
+// })
+
+// aboutA.addEventListener('mouseout', () => {
+//   removeColor(satAbout);
+// })
+
+redHover(aboutA, satAbout);
+redHover(workA, satWork);
+redHover(contactA, satContact);
+
+redHover(satAbout, aboutA);
+redHover(satWork, workA);
+redHover(satContact, contactA);
+
+function redHover(barBtn, satBtn) {
+  barBtn.addEventListener('mouseover', () => {
+    addColor(satBtn);
+  })
+  
+  barBtn.addEventListener('mouseout', () => {
+    removeColor(satBtn);
+  })
+}
+
 function addColor(btn) {
   btn.classList.add('scroll');
+}
+
+function removeColor(btn) {
+  btn.classList.remove('scroll');
 }
 
 function workColor() {
