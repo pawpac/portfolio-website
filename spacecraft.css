@@ -125,10 +125,6 @@
   grid-area: bolt4;
 }
 
-
-/* TESTING */
-
-
 .hatch-base {
   position: absolute;
   background-color: rgb(136, 135, 135);
@@ -157,10 +153,6 @@
   height: 80px;
   width: 80px;
   transform: translate(2px, 2px) rotate(45deg);
-  /* display: grid; */
-  /* grid-template-areas: "lip1 lip2"
-  "lip3 lip4"; */
-  /* gap: 10px; */
   overflow: hidden;
 }
 
@@ -187,34 +179,6 @@
   width: 100%;
   height: 100%;
 }
-
-
-
-/* .lip {
-  width: 40px;
-  height: 40px;
-  background-color: rgb(221, 221, 221);
-  border: solid 1px rgb(218, 194, 194);
-  border-radius: 10px;
-  transform: translate(-5px, -5px);
-  box-shadow: 0 0 5px black;
-}
-
-.lip-one {
-  grid-area: lip1;
-}
-
-.lip-two {
-  grid-area: lip2;
-}
-
-.lip-three {
-  grid-area: lip3;
-}
-
-.lip-four {
-  grid-area: lip4;
-} */
 
 .point {
   position: absolute;
@@ -281,11 +245,9 @@
   }
 }
 
-.satelite {
-  /* width: 20%;
-  margin-right: 200px; */
-  /* padding-left: 300px; */
-}
+
+
+
 
 
 

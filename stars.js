@@ -15,7 +15,7 @@ starsRows.forEach((cell) => {
     speck.classList.add('speck');
     speck.style.fontSize = (parseFloat(randomNum()) * 2) + 'rem';
     speck.style.padding = parseFloat(randomNum() * 30) + 'px';
-    speck.style.animation = 'starLife ' + (parseFloat(randomNum()) * 10) + 's infinite linear';
+    speck.style.animation = 'starLife ' + (parseFloat(randomNum()) * 5) + 's infinite linear';
     cell.appendChild(speck);
   }
 })

@@ -1,5 +1,3 @@
-/* SHADOW */
-
 .capsule-shadow {
   transform: translate(10px, -75px);
 }
@@ -29,19 +27,7 @@
   width: 50%;
   height: 200px;
   border-radius: 25px;
-  /* transform: skew(55deg) translate(-120px);
-  animation: panel-one-shade 120s infinite linear; */
 }
-
-/* @keyframes panel-one-shade {
-  0% {
-    transform: skew(55deg) translate(-120px) ;
-  }
-
-  5% {
-    transform: skew(85deg) translate(-30px) scale(2);
-  }
-} */
 
 .expand-panel-shadow-one {
   position: absolute;
@@ -50,20 +36,16 @@
   justify-content: end;
   width: 612px;
   height: 200px;
-  /* transform: translate(-150px, -100px); */
 }
 
 .rotate-panel-shadow-one {
   width: 612px;
   height: 200px;
   position: absolute;
-
   animation: solar-panel-shadow 120s infinite linear;
-  /* transform: rotate(45deg); */
 }
 
 .shadow-container-one {
-
   width: 612px;
   height: 190px;
   position: absolute;
@@ -79,11 +61,6 @@
   }
 }
 
-
-
-
-/* ###################################################################################3 */
-
 .expand-panel-shadow-two {
   position: absolute;
   display: flex;
@@ -91,20 +68,16 @@
   justify-content: start;
   width: 612px;
   height: 200px;
-  /* transform: translate(-150px, -100px); */
 }
 
 .rotate-panel-shadow-two {
   width: 612px;
   height: 200px;
   position: absolute;
-
   animation: solar-panel-shadow-two 120s infinite linear;
-  /* transform: rotate(45deg); */
 }
 
 .shadow-container-two {
-
   width: 612px;
   height: 190px;
   position: absolute;
@@ -127,9 +100,6 @@
   transform: rotate(90deg);
 }
 
-
-/* ###################################################################################3 */
-
 .expand-panel-shadow-three {
   position: absolute;
   display: flex;
@@ -137,20 +107,16 @@
   justify-content: end;
   width: 612px;
   height: 200px;
-  /* transform: translate(-150px, -100px); */
 }
 
 .rotate-panel-shadow-three {
   width: 612px;
   height: 200px;
   position: absolute;
-
   animation: solar-panel-shadow-three 120s infinite linear;
-  /* transform: rotate(45deg); */
 }
 
 .shadow-container-three {
-
   width: 612px;
   height: 190px;
   position: absolute;
@@ -173,26 +139,15 @@
   transform: rotate(90deg);
 }
 
-
-
-
-
-
-/* TESTING */
-
-/* light */
-
 span.blink {
   color: rgb(195, 195, 195);
   font-size: 2rem;
-  /* text-shadow: 0 0 5px rgb(255, 255, 255); */
   z-index: 1;
   font-size: 2em;
   animation: blink 3s infinite linear;
 }
 
 a:hover {
-  /* color: rgb(247, 190, 190); */
   text-shadow: 0 0 10px rgb(255, 33, 33);
   color: red;
 }
@@ -215,18 +170,14 @@ a:hover {
     color:  rgb(148, 147, 147);
     text-shadow: 0 0 0px rgb(255, 255, 255);
   }
-
-
 }
 
 .flash {
   background-color: white;
   width: 50%;
   height: 150%;
-  /* background-color: white; */
   position: absolute;
   box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.676);
-  /* transform: rotate(45deg) translate(220px, -100px); */
   animation: slide .2s 1 linear;
 }
 
@@ -250,4 +201,5 @@ a:hover {
   text-shadow: 0 0 10px rgb(255, 33, 33);
   color: #ff0000;
 }
+
 
