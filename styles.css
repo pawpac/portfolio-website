@@ -315,16 +315,16 @@ input {
   font-size: 1rem;
   border-style: none;
   height: 44px;
-  background-color: rgb(0, 0, 0, .5);
-  color: white;
+  background-color: rgba(123, 123, 123, 0.5);
+  color: rgb(255, 255, 255);
   padding: 10px;
 }
 
 textarea {
   font-size: 1rem;
   border-style: none;
-  background-color: rgb(0, 0, 0, .5);
-  color: white;
+  background-color: rgba(123, 123, 123, 0.5);
+  color: rgb(255, 255, 255);
   height: 250px;
   padding: 10px;
 }
@@ -375,9 +375,9 @@ textarea {
   flex-direction: column;
 }
 
-.contact-section {
+/* .contact-section {
   max-width: 500px;
-}
+} */
 
 .pawpac {
   color: rgb(255, 72, 72);
@@ -491,8 +491,18 @@ textarea {
   }
 
   .section {
+    width: 100%;
     padding: 0;
     min-width: 0;
+    padding: 0 0 15px 0;
+  }
+
+  .contact-page {
+    width: 100%;
+  }
+
+  form {
+    padding: 15px;
   }
 
   .image {
